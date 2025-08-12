@@ -1,0 +1,84 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+.navbar .nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #0d6efd;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #f8f9fa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px; /* to avoid navbar overlap */
+}
+.hero-section h1 {
+  font-size: 3rem;
+  color: #0d6efd;
+}
+.hero-section p {
+  font-size: 1.2rem;
+}
+.hero-section .btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+/* Hover Cards */
+.hover-card {
+  transition: all 0.3s ease;
+}
+.hover-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills & Project Boxes */
+.skill-box, .card {
+  transition: all 0.3s ease;
+}
+.skill-box:hover, .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+ #projects .card-img-top {
+    width: 100%;
+    height: 300px; /* fixed height */
+    object-fit: cover; /* crop to fit */
+  }
+/*/ Buttons */
+.btn-primary:hover {
+  background-color: #084298;
+}
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* Contact Section Icons */
+#contact a {
+  transition: transform 0.3s ease;
+}
+#contact a:hover {
+  transform: scale(1.2);
+}
+
